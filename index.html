@@ -4,10 +4,122 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mon portfolio</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- icons from https://www.iconfinder.com/search?q=&family=feather -->
 </head>
 <body>
-    <h1>Hello</h1>
-    <p>On n'est pas bien, là ?</p>
-    <img src="https://img.buzzfeed.com/buzzfeed-static/static/2023-06/29/16/asset/2b571f246eb6/sub-buzz-1139-1688056802-2.jpg?downsize=600:*&output-format=auto&output-quality=auto" alt="">
+    <header class="header">
+        <nav class="header__nav">
+            <dev class="header__link"><a href="#">Home</a></dev>
+            <div class="header__link"><a href="#">Gallery</a></div>
+            <div class="header__link"><a href="#">Contact</a></div>
+            <div class="header__link"><a href="#">About</a></div>
+        </nav>
+        <div class="welcome">
+            <img class="site-logo" src="img/logo.png" alt="logo">
+            <h1 class="welcome__title">Welcome to my site</h1>
+            <p class="welcome__p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt sapiente consequuntur dicta impedit.</p>
+        </div>
+    </header>
+    <main>
+        <section class="section-articles">
+            <article class="section__article">
+                <div class="article__logo-bg logo-bg"><img class="article__logo" src="img/award_prize_icon.png" alt=""></div>
+                    <div class="article-text">
+                        <h2 class="article__title">Lorem Ipsum</h2>
+                        <p class="article__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad iste sequi doloremque.</p>
+                    </div>
+            </article>
+            <article class="section__article">
+                <div class="article__logo-bg logo-bg"><img class="article__logo" src="img/briefcase_icon.png" alt=""></div>
+                    <div class="article-text">
+                        <h2 class="article__title">Lorem Ipsum</h2>
+                        <p class="article__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad iste sequi doloremque.</p>
+                    </div>
+            </article>
+            <article class="section__article">
+                <div class="article__logo-bg logo-bg"><img class="article__logo" src="img/instagram_icon.png" alt=""></div>
+                    <div class="article-text">
+                        <h2 class="article__title">Lorem Ipsum</h2>
+                        <p class="article__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad iste sequi doloremque.</p>
+                    </div>
+            </article>
+            <article class="section__article">
+                <div class="article__logo-bg logo-bg"><img class="article__logo" src="img/map_icon.png" alt=""></div>
+                    <div class="article-text">
+                        <h2 class="article__title">Lorem Ipsum</h2>
+                        <p class="article__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad iste sequi doloremque.</p>
+                    </div>
+            </article>
+        </section>
+        <div class="separator"></div>
+        <section class="section-photos">
+            <div class="photos-list">
+                <div class="section__photo">
+                    <img src="img/photo-1.jpeg" alt="" class="photo">
+                    <div class="photo-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi deserunt blanditiis veritatis.</div>
+                </div>
+                <div class="section__photo">
+                    <img src="img/photo-2.jpeg" alt="" class="photo">
+                    <div class="photo-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi deserunt blanditiis veritatis.</div>
+                </div>
+                <div class="section__photo">
+                    <img src="img/photo-3.jpeg" alt="" class="photo">
+                    <div class="photo-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi deserunt blanditiis veritatis.</div>
+                </div>
+            </div>
+            <button class="btn see-more">More</button>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-interact">
+            <section class="footer__contact">
+                <h3>Contact</h3>
+                <div class="contact-items">
+                    <div class="contact-item">
+                        <div class="footer__logo-bg logo-bg"><img class="footer__logo" src="img/message_circle_chat_icon.png" alt=""></div>
+                            <div class="footer-text">
+                                <h4 class="footer__title">Address</h4>
+                                <p class="footer__p">Your Corporation Address</p>
+                            </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="footer__logo-bg logo-bg"><img class="footer__logo" src="img/message_circle_chat_icon.png" alt=""></div>
+                            <div class="footer-text">
+                                <h4 class="footer__title">Email</h4>
+                                <p class="footer__p">info@sample.com</p>
+                            </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="footer__logo-bg logo-bg"><img class="footer__logo" src="img/message_circle_chat_icon.png" alt=""></div>
+                            <div class="footer-text">
+                                <h4 class="footer__title">Social</h4>
+                                <p class="footer__p">www.sample.com<br/>
+                                @sample</p>
+                            </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="footer__logo-bg logo-bg"><img class="footer__logo" src="img/message_circle_chat_icon.png" alt=""></div>
+                            <div class="footer-text">
+                                <h4 class="footer__title">Phone</h4>
+                                <p class="footer__p">+33 (0)2 97 45 25 00<br/></p>
+                            </div>
+                    </div>
+                </div>
+            </section>
+            <section class="footer__msg">
+                <h3>Get in touch</h3>
+                <form class="form-msg" action="#">
+                    <input type="text" name="name" placeholder="Name" class="text-input" id="">
+                    <input type="text" name="email" placeholder="Email" class="text-input" id="">
+                    <br/>
+                    <textarea name="msg" placeholder="Message" class="text-input" id="" cols="46" rows="4"></textarea>
+                    <button type="submit" class="btn submit">Send</button>
+                </form>
+            </section>
+        </div>
+        <div class="footer__rights">© Untitled. All rights reserved.</div>
+    </footer>
 </body>
 </html>

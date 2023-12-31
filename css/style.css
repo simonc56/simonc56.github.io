@@ -1,0 +1,257 @@
+:root {
+    --color-primary: rgb(70,170,70);
+    --color-inv-primary: rgb(0,140,0);
+    --color-bg: #090;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: content-box;
+}
+body {
+    font-size: 1.6rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ===== HEADER ====== */
+
+.header {
+    background-image: url(../img/green-geometric-background.jpg);
+    /* background-position: center; */
+    background-size: cover;
+    background-color: var(--color-bg) ;
+    color: white;
+    padding: 3rem;
+    filter: hue-rotate(30deg);
+    filter: saturate(80%);
+}
+
+.header__nav {
+    margin:0 auto;
+    max-width: 60rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    border: 0.1rem solid white;
+    border-radius: 1rem;
+    padding: 2rem 0;
+}
+
+.header__link {
+    display: inline;
+    padding: 3rem;
+}
+.header__link a, .welcome__title, h3 {
+    color: white;
+    font-size: 2rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.welcome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.welcome__p {
+    max-width: 40rem;
+    margin-top: 2rem;
+}
+
+.site-logo {
+    width: 6rem;
+    background-color:rgba(255,255,255,1);
+    filter: opacity(90%);
+    border-radius: 3rem;
+    padding: 1rem;
+    margin-bottom: 3rem;
+    filter: hue-rotate(30deg);
+    filter: saturate(80%);
+}
+
+/* ====== MAIN ====== */
+
+.section-articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 3rem;
+    max-width: 80rem;
+    margin: auto;
+}
+
+.section__article {
+    max-width: 30rem;
+    display: flex;
+    align-items: self-start;
+    margin-bottom: 3rem;
+}
+.article-text {
+    padding-top: 1.4rem;
+    margin-left: 2rem;
+}
+
+.article__title {
+    color: var(--color-primary);
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight:300;
+}
+
+.article__logo-bg {
+    background-color: var(--color-primary);
+    /* filter: contrast(100%); */
+    width: 10rem;
+    padding: 1.6rem;
+    border-radius: 3rem;
+}
+
+.article__logo, .footer__logo {
+    /* filter: contrast(100%); */
+    /* width: 8rem; */
+    /* padding: 1rem; */
+    filter: invert(100%);
+}
+
+.article__p {
+    font-size: 1.4rem;
+}
+
+.separator {
+    background-image: url(../img/green-geometric-background.jpg);
+    filter: hue-rotate(30deg);
+    filter: saturate(80%);
+    height: 10rem;
+}
+
+.section-photos {
+    display: flex;
+    flex-direction: column;
+}
+.photos-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 4rem auto;
+    max-width: 120rem;
+    justify-content: center;
+}
+
+.section__photo {
+    width: 26rem;
+    margin: 2rem;
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+.photo {
+    width: 100%;
+    height: 20rem;
+    margin-bottom: 1.6rem;
+}
+
+/* ====== BUTTON ====== */
+
+.btn {
+    color: white;
+    margin: -4rem auto 4rem;
+    border-style: none;
+    border-radius: 0.3rem;
+    cursor: pointer;
+}
+
+.see-more {
+    background-color: var(--color-primary);
+    padding: 0.5rem 5rem;
+}
+
+.submit {
+    background-color: #555;
+    padding: 0.5rem 2rem;
+    color: #aaa
+}
+
+/* ====== FOOTER ====== */
+
+.footer {
+    background-color: var(--color-bg);
+    color: white;
+    padding: 3rem 0;
+}
+
+.footer-interact {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 120rem;
+    
+}
+
+.footer__contact {
+    margin-left: 2rem;
+    margin-right: 4rem;
+    max-width: 44rem;
+
+}
+
+.contact-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+.contact-item {
+    width: 20rem;
+    /* margin-right: 2rem; */
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: flex-start;
+}
+
+.footer__title {
+    margin-top: 0.8rem;
+}
+
+.footer__p {
+    font-size: 1.4rem;
+    font-style: italic;
+}
+
+.footer__logo-bg {
+    background-color: rgba(200,200,200,0.5);
+    /* filter: contrast(100%); */
+    width: 4rem;
+    padding: 0.8rem;
+    border-radius: 1.5rem;
+    margin-right: 1rem;
+}
+
+.text-input {
+    border: 0.1rem solid white;
+    border-radius: 0.6rem;
+    background-color: rgba(200,200,200,0.5);
+    padding: 0.6rem;
+    margin-top: 2rem;
+    margin-right: 2rem;
+    color: white;
+}
+
+.text-input::placeholder {
+    color: white;
+    opacity: 1; /* Firefox */
+}
+
+textarea {
+    color: white;
+    display: block;
+    margin-bottom: 2rem;
+}
+
+.footer__rights {
+    text-align: center;
+    font-style: italic;
+    font-size: 1.4rem;
+    /* margin-bottom: 0; */
+}
